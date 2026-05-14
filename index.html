@@ -169,8 +169,8 @@
 
     <script>
         const studentDB = {
-            "HEE001": { name: "Arsh Vaishnav", p: 95, r: "1 / 2", q: false },
-            "HEE002": { name: "Atharv Sharma", p: 72, r: "2 / 2", q: false }
+            "HEE001": { name: "Arsh Vaishnav", p: 70, r: "2 / 2", q: true },
+            "HEE002": { name: "Atharv Sharma", p: 73.3 , r: "1 / 2", q: true }
         };
 
         function checkData() {
@@ -180,7 +180,7 @@
             if (s) {
                 document.getElementById('outName').innerText = s.name;
                 document.getElementById('outRoll').innerText = roll;
-                document.getElementById('outScore').innerText = ((s.p / 100) * 60).toFixed(1);
+                document.getElementById('outScore').innerText = ((s.p / 100) * 30).toFixed(1);
                 document.getElementById('outPerc').innerText = s.p + "%";
                 document.getElementById('outRank').innerText = s.r;
                 
